@@ -7,6 +7,7 @@
 
 #include <string>
 #include <iostream>
+
 enum class Type {
     premium,
     standard
@@ -32,7 +33,7 @@ public:
 
     int getPerioada() const;
 
-    friend std::ostream& operator<<(std::ostream& os, Abonament *ab);
+    friend std::ostream &operator<<(std::ostream &os, Abonament *ab);
 
 };
 

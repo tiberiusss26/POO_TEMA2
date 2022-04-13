@@ -22,7 +22,7 @@ int Abonament::getPerioada() const {
 }
 
 std::ostream &operator<<(std::ostream &os, Abonament *ab) {
-    std::cout<<ab->nume_abonament<<' '<<ab->pret<<' '<<ab->perioada<<' ';
+    std::cout << ab->nume_abonament << ' ' << ab->pret << ' ' << ab->perioada << ' ';
     return os;
 }
 

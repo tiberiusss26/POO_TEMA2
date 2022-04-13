@@ -27,6 +27,7 @@ int main() {
     std::shared_ptr<Abonat> a1 = std::make_shared<Abonat>(1, "Marin", "5020223134411", "0722663864", x);
     std::shared_ptr<Abonat> b1 = std::make_shared<Abonat>(2, "Stanescu", "4020223134411", "0786675544", x);
     std::shared_ptr<Abonat> c1 = std::make_shared<Abonat>(3, "Ilie", "5000223134411", "072231321", y);
+    
     Clienti c;
     c.adaugaAbonat(a1);
     c.adaugaAbonat(b1);
@@ -37,7 +38,7 @@ int main() {
 
     cout << x << '\n';
 
-    Persoana *p1 = new Abonat(1,"Marculescu", "5020326135144","0744556253",x);
-    Abonat &d1 = dynamic_cast<Abonat&>(*p1);
+    Persoana *p1 = new Abonat(1, "Marculescu", "5020326135144", "0744556253", x);
+    Abonat &d1 = dynamic_cast<Abonat &>(*p1);
 
 }

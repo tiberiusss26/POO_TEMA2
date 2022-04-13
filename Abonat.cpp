@@ -7,19 +7,19 @@
 //Abonat::Abonat( int id, const std::string &nume, const std::string &cnp, std::string &nrTelefon, const AbonamentPremium &x) : Persoana(id,nume, cnp),nr_telefon(nrTelefon), x(x) {}
 
 Abonat::Abonat(const Abonat &ab) : Persoana(ab.id, ab.nume, ab.cnp) {
-    nr_telefon=ab.nr_telefon;
-    x=ab.x;
+    nr_telefon = ab.nr_telefon;
+    x = ab.x;
 }
 
 Abonat::Abonat(int i, std::string basicString, std::string basicString1, std::string basicString2,
-               AbonamentPremium &premium) : Persoana(i, std::move(basicString), std::move(basicString1)){
-    nr_telefon=basicString2;
-    x=&premium;
+               AbonamentPremium &premium) : Persoana(i, std::move(basicString), std::move(basicString1)) {
+    nr_telefon = basicString2;
+    x = &premium;
 
 }
 
 bool Abonat::isPremium() {
-    if(x->getReducere() !=0 ) return true;
+    if (x->getReducere() != 0) return true;
     return false;
 }
 

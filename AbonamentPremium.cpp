@@ -10,7 +10,7 @@ AbonamentPremium::AbonamentPremium(const std::string &numeAbonament, float pret,
         : Abonament(numeAbonament, pret, perioada), reducere(reducere) {}
 
 bool AbonamentPremium::premium(AbonamentPremium &a) {
-    if(a.reducere!=0)
+    if (a.reducere != 0)
         return true;
     return false;
 }
@@ -35,7 +35,7 @@ int AbonamentPremium::getReducere() const {
 }
 
 int AbonamentPremium::sumaPlatita() {
-    return perioada*(pret-reducere);
+    return perioada * (pret - reducere);
 }
 
 AbonamentPremium::~AbonamentPremium() {
@@ -43,12 +43,12 @@ AbonamentPremium::~AbonamentPremium() {
 }
 
 std::string AbonamentPremium::getType() {
-    if(reducere !=0 ) return "premium";
+    if (reducere != 0) return "premium";
     else return "standard";
 }
 
 std::ostream &operator<<(std::ostream &os, AbonamentPremium ab) {
-    std::cout<<ab.nume_abonament<<' '<<ab.pret<<' '<<ab.perioada<<' '<<ab.reducere<<' ';
+    std::cout << ab.nume_abonament << ' ' << ab.pret << ' ' << ab.perioada << ' ' << ab.reducere << ' ';
     return os;
 }
 

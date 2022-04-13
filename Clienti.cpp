@@ -34,7 +34,7 @@ int Clienti::sumaIncasata() {
 
 std::ostream &operator<<(std::ostream &os, const Clienti &clienti) {
     for (auto it: clienti.abonati) {
-        std::cout<<it;
+        std::cout << it;
     }
     return os;
 }

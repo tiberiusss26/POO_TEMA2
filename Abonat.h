@@ -4,6 +4,7 @@
 
 #ifndef POO_TEMA2_ABONAT_H
 #define POO_TEMA2_ABONAT_H
+
 #include <string>
 #include "AbonamentPremium.h"
 #include "Persoana.h"
@@ -14,10 +15,11 @@ class Abonat : public Persoana {
 public:
 //    Abonat(int id, const std::string &nume, const std::string &cnp, std::string &nrTelefon, const AbonamentPremium &x);
 
-    Abonat (const Abonat & ab);
+    Abonat(const Abonat &ab);
 
     Abonat(int i, std::string basicString, std::string basicString1, std::string basicString2,
            AbonamentPremium &premium);
+
     Abonat();
 
     void setNrTelefon(const std::string &nrTelefon);
@@ -26,7 +28,7 @@ public:
 
     bool isPremium();
 
-     int getSumaPlatita();
+    int getSumaPlatita();
 
     virtual ~Abonat();
 

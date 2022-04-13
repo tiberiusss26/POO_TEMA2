@@ -4,6 +4,7 @@
 
 #ifndef POO_TEMA2_CLIENTI_H
 #define POO_TEMA2_CLIENTI_H
+
 #include "Abonat.h"
 #include <vector>
 #include <ostream>

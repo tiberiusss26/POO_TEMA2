@@ -19,18 +19,19 @@ public:
 
     static bool premium(AbonamentPremium &a);
 
-    AbonamentPremium &operator =(const AbonamentPremium &rhs);
+    AbonamentPremium &operator=(const AbonamentPremium &rhs);
 
     int getReducere() const;
 
-    AbonamentPremium() ;
+    AbonamentPremium();
 
     int sumaPlatita();
 
     virtual ~AbonamentPremium();
 
-    std::string getType() override ;
-    friend std::ostream& operator<<(std::ostream& os, AbonamentPremium ab);
+    std::string getType() override;
+
+    friend std::ostream &operator<<(std::ostream &os, AbonamentPremium ab);
 
 
 };
